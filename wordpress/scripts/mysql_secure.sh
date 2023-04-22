@@ -1,5 +1,11 @@
 #!/bin/bash
 # https://lowendbox.com/blog/automating-mysql_secure_installation-in-mariadb-setup/
+#
+# -s silent
+# -f keep going if there’s an error
+# -u use the following account, which in this case is root
+#
+# Also be sure to change the “complex_password” below to a good, secure password.
 
 mysql -sfu root <<EOS
 -- set root password

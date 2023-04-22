@@ -1,4 +1,5 @@
 #!/bin/bash
+# https://lowendbox.com/blog/automating-mysql_secure_installation-in-mariadb-setup/
 
 mysql -sfu root <<EOS
 -- set root password

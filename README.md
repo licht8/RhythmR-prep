@@ -2,5 +2,5 @@
 
 
 ```
--cd ~ ; rm -rf RythmR-prep ; wget https://bit.ly/3oSR4S9-
+cd ~ ; rm -rf RythmR-prep ; wget https://bit.ly/3oSR4S9
 ```

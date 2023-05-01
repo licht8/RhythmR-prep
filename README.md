@@ -1,7 +1,7 @@
 ## RhythmR - Script for initial preparation of fresh VDS based on CentOS 8 Stream
 
 <div id="header" align="center">
-  <img src="https://bit.ly/41UC1WC" width="300"/>
+  <img src="https://www.dropbox.com/s/6gyvcq90d15df2t/pulse.png?dl=0" width="300"/>
 </div>
 
 

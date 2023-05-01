@@ -1,38 +1,38 @@
 #!/bin/bash
 
-# Запросить желаемый размер SWAP-файла в гигабайтах
-read -p "Введите желаемый размер SWAP-файла в гигабайтах (например, 2): " SWAP_SIZE_GB
+# Request the desired size of the SWAP file in gigabytes
+read -p "Enter the desired size of the SWAP file in gigabytes (e.g. 2): " SWAP_SIZE_GB
 
-# Найти существующий SWAP-файл или создать новый
+# Find an existing SWAP file or create a new one
 if [ -f /swapfile ]; then
-    echo "Существующий SWAP-файл найден."
+    echo "An existing SWAP file was found."
 else
-    echo "Создание нового SWAP-файла..."
+    echo "Creating a new SWAP file..."
     fallocate -l ${SWAP_SIZE_GB}G /swapfile
     chmod 600 /swapfile
     mkswap /swapfile
     swapon /swapfile
     echo "/swapfile none swap sw 0 0" >> /etc/fstab
-    echo "SWAP-файл создан и включен."
+    echo "The SWAP file has been created and enabled."
     exit 0
 fi
 
-# Получить размер текущего SWAP-файла
+# Get the current size of the SWAP file
 CURRENT_SWAP_SIZE=$(free -h | awk '/^Swap:/ { print $2 }' | sed 's/G//')
 
-# Если текущий размер меньше требуемого, то увеличить его
+# If the current size is smaller than the desired size, then increase it
 if (( $(echo "$CURRENT_SWAP_SIZE < $SWAP_SIZE_GB" | bc -l) )); then
-    echo "Текущий размер SWAP-файла: $CURRENT_SWAP_SIZE GB."
-    echo "Увеличение SWAP-файла до ${SWAP_SIZE_GB} GB..."
+    echo "The current size of the SWAP file is $CURRENT_SWAP_SIZE GB."
+    echo "Increasing the SWAP file size to ${SWAP_SIZE_GB} GB..."
     swapoff /swapfile
     fallocate -l ${SWAP_SIZE_GB}G /swapfile
     chmod 600 /swapfile
     mkswap /swapfile
     swapon /swapfile
-    echo "SWAP-файл увеличен до ${SWAP_SIZE_GB} GB."
+    echo "The SWAP file size has been increased to ${SWAP_SIZE_GB} GB."
 else
-    echo "Текущий размер SWAP-файла уже достаточный ($CURRENT_SWAP_SIZE GB)."
+    echo "The current size of the SWAP file is already sufficient ($CURRENT_SWAP_SIZE GB)."
 fi
 
-# Вывести информацию о размере SWAP-памяти
+# Display information about the size of the SWAP memory
 free -h | grep -E '^(Mem|Swap):'

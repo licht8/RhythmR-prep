@@ -2,5 +2,5 @@
 
 
 ```
-cd ~ ; rm -rf RythmR-prep ; curl https://bit.ly/3oSR4S9
+cd ~ ; rm -rf RythmR-prep ; dnf -y install wget ; wget https://bit.ly/3oSR4S9
 ```

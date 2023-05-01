@@ -1,1 +1,1 @@
-# cosRythm
+# CentOS-8-Rythm

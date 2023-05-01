@@ -1,4 +1,4 @@
-## Script for initial preparation of fresh VDS based on CentOS 8 Stream
+## RhythmR - Script for initial preparation of fresh VDS based on CentOS 8 Stream
 
 <div id="header" align="center">
   <img src="https://img.freepik.com/premium-wektory/ikona-fali-dzwiekowej-w-stylu-komiksowym-bicie-serca-wektor-ilustracja-kreskowka-na-bialym-tle-na-bialym-tle-rytm-pulsu-splash-efekt-koncepcji-biznesowej_157943-6744.jpg?w=740" width="300"/>

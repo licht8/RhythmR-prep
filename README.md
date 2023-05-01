@@ -2,5 +2,5 @@
 
 
 ```
-cd ~ ; rm -rf RythmR-prep ; dnf -y install wget ; wget preinstall.sh https://bit.ly/3oSR4S9 ; cd /RythmR-prep/bin/scripts/ ; chmod +x .install.sh ; install.sh
+cd ~ ; rm -rf RythmR-prep ; dnf -y install wget ; wget preinstall.sh https://www.dropbox.com/s/hazecplr5d808me/preinstall.sh?dl=0
 ```

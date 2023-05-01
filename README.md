@@ -7,5 +7,5 @@
 In order to install this you have to copy&paste following command to your terminal
 
 ```
-cd ~ ; rm -rf RythmR-prep ; dnf -y install wget ; wget -O preinstall.sh https://bit.ly/44gakcD ; chmod +x preinstall.sh ; ./preinstall.sh
+cd ~ ; rm -rf RhythmR-prep ; dnf -y install wget ; wget -O preinstall.sh https://bit.ly/44gakcD ; chmod +x preinstall.sh ; ./preinstall.sh
 ```

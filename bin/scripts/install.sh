@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo yum update -y
-sudo yum install -y git curl wget zip unzip tar
+dnf update -y
+dnf install -y git curl zip unzip tar

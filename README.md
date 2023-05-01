@@ -1,1 +1,1 @@
-# CentOS-8-RythmR
+# Script for initial preparation of fresh VDS based on CentOS 8 Stream

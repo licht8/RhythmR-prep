@@ -14,3 +14,8 @@ In order to install this you have to copy&paste following command to your termin
 ```
 cd ~ ; rm -rf RhythmR-prep ; dnf -y install wget ; wget -O preinstall.sh https://bit.ly/3Vj5xDf ; chmod +x preinstall.sh ; ./preinstall.sh
 ```
+
+## What does this command do ?
+* Goes to ~/ and deletes the RhythmR-prep folder if needed.
+* Installs wget, downloads preinstaller and runs.
+* Then install.sh does all the work such as: installs basic components for comfortable server administration, disables SELinux, etc.

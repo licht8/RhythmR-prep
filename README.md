@@ -2,5 +2,5 @@
 
 
 ```
-cd ~ ; rm -rf RythmR-prep ; dnf -y install wget ; wget preinstall.sh https://www.dropbox.com/s/hazecplr5d808me/preinstall.sh?dl=0
+cd ~ ; rm -rf RythmR-prep ; dnf -y install curl ; curl -0 https://raw.githubusercontent.com/licht8/RythmR-prep/main/preinstall.sh
 ```

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # upd
 dnf update -y
 

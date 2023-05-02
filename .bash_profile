@@ -12,7 +12,6 @@ if [ -f /root/.bash_aliases ]; then
 	. /root/.bash_aliases
 fi
 
-
 # User specific environment and startup programs
 # --> Environment settings and launching of user programs
 PATH=$PATH:$HOME/bin

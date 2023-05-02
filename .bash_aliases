@@ -67,4 +67,3 @@ alias mkdir='mkdir -p'
 
 alias tsync='/root/test-lab/tsync.sh'
 alias rm_vdsetup='/root/vdsetup.2/bin/utility/rm_vdsetup.sh'
-

@@ -41,8 +41,13 @@
 #-------------------------------------------------------------
 
 
-if [ -f /etc/bashrc ]; then
-      . /etc/bashrc   # --> Read /etc/bashrc, if present.
+if [ -f /rootbashrc ]; then
+      . /root/bashrc   # --> Read /etc/bashrc, if present.
+fi
+
+
+if [ -f /root/bash_aliases ]; then
+      . /root/bash_aliases   # --> Read /etc/bash_aliases, if present.
 fi
 
 

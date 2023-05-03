@@ -12,3 +12,7 @@ dnf install -y epel-release git curl tar mc net-tools iftop htop atop bzip2 trac
 # Выключаем SELinux
 setenforce 0
 sestatus
+
+sudo cp -a /root/RhythmR-prep/.bashrc /root/ ;
+sudo cp -a /root/RhythmR-prep/.bash_profile /root/ ;
+sudo cp -a /root/RhythmR-prep/.bash_aliases /root/ ;

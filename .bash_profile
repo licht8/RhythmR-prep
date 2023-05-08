@@ -1,20 +1,20 @@
 # .bash_profile
 
 # Get the aliases and functions
-# --> Импортируем алиасы и функции из файла .bashrc, если такой файл существует
+# --> Import aliases and functions from the .bashrc file, if such a file exists
 if [ -f /root/.bashrc ]; then
 	. /root/.bashrc
 fi
 
 # Use ~/.bash_aliases
-# --> Импортируем дополнительные алиасы
+# --> Importing additional aliases
 if [ -f /root/.bash_aliases ]; then
 	. /root/.bash_aliases
 fi
 
 
 # User specific environment and startup programs
-# --> Настройки окружения и запуск пользовательских программ
+# --> Setting up the environment and running user programmes
 PATH=$PATH:$HOME/bin
 
 export PATH
